@@ -5,38 +5,41 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Tim Gunn</h1>
-				<p>The website behind the Type 1 Geek, Developer, Coder, Crossfitter and Weather Enthusiast.</p>
-			</header>
+				<!-- Header -->
+					<header id="header">
+						<img src="./assets/images/timgunn-low.png" alt="Tim Gunn">
+						<h1>Tim Gunn</h1>
+						<p>Developer&nbsp;&bull;&nbsp;Chairman&nbsp;&bull;&nbsp;Scientific Systems Engineer&nbsp;&bull;&nbsp;Type 1</p>
+						<p>I decided not to wait for better T1D management #WeAreNotWaiting</p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/TwistaTim" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.instagram.com/twistatim/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/Tornado-Tim" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="javascript:location='mailto:\u0068\u0065\u006c\u006c\u006f\u0040\u0074\u0069\u006d\u0067\u0075\u006e\u006e\u002e\u0064\u0065\u0076';void 0" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-			<div>
-				<p>Some things about me, I am passionate about what I do!<br/>
-					Meteorology is something I get a kick out of, especially thunderstorms and severe weather phenomena.</p>
-				<p>I work at the Meteorological Service of New Zealand as a Scientific Systems Engineer, essentially helping keep the IT systems running smoothly. </p>
-				<p>I work with extraordinary people in the #WeAreNotWaiting community, joining in developing a highly advanced artificial pancreas that runs on Android smartphones.</p>
-				<p>I am Nightscout New Zealand's Chairman, leading the #WeAreNotWaiting movement to the land of the long white cloud.<br/>If you don't see me behind a screen, I will either be talking, presenting, or most likely working out at the Gym or Box.</p>
-				<p>There is more to me than on what's written here, so if your intrigued, get in contact! </p>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; timgunn.dev</span>
+					</footer>
+
 			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://twitter.com/TwistaTim" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://www.instagram.com/twistatim/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://github.com/Tornado-Tim" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="javascript:location='mailto:\u0068\u0065\u006c\u006c\u006f\u0040\u0074\u0069\u006d\u0067\u0075\u006e\u006e\u002e\u0064\u0065\u0076';void 0" class="icon fa-envelope">&nbsp;<script type="text/javascript">document.write('\u0068\u0065\u006c\u006c\u006f\u0040\u0074\u0069\u006d\u0067\u0075\u006e\u006e\u002e\u0064\u0065\u0076')</script><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; timgunn.dev</li><li>Tim Gunn</li>
-				</ul>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
